@@ -1,0 +1,31 @@
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .2rem;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: .5rem;
+    padding: 0 .5rem;
+
+
+    background: white;
+    
+    /* animation: show .5s ease-in  ;  */
+
+}
+/* @keyframes show{
+ from {width:0%}
+ to {width:100%}
+} */
+.unchecked-bookmark{
+
+}
+.checked-bookmark{
+    color: #ACD1AF;
+}
+.delete-icon{
+    color: #F47174;
+}
+

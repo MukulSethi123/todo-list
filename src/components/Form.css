@@ -1,0 +1,33 @@
+.form-container{
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+
+}
+
+form > input {
+    border-style: none;
+    /* border-color: black; */
+    border-radius: .25rem;
+    font-size: large;
+    width: 100%;
+    padding: .25rem .75rem;
+
+}
+form input:focus{
+    outline: none ;
+}
+
+.form-button {
+  color: #ACD1AF;
+    
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
