@@ -4,11 +4,26 @@
   text-align: center;
   margin: 1rem;
   padding: 0 1rem 2rem;
-
+  
 }
-
-
-
+.super-list{
+  align-items: center;
+  border-radius:.5rem ;
+  border-color: black;
+  border-style: solid;
+  width: 100%;
+  margin-top: 1rem;
+}
+.super-list > h1{
+  border-bottom: solid;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.app-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
