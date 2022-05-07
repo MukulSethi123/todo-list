@@ -4,14 +4,18 @@
   text-align: center;
   margin: 1rem;
   padding: 0 1rem 2rem;
+  min-width: 550px;
   
+}
+.main-app{
+  width: 100%;
 }
 .super-list{
   align-items: center;
   border-radius:.5rem ;
   border-color: black;
   border-style: solid;
-  width: 100%;
+  width: 50%;
   margin-top: 1rem;
 }
 .super-list > h1{

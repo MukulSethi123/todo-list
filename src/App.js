@@ -12,7 +12,7 @@ function App() {
       <div className="app-container">
         <div className="super-list">
           <h1>All Lists</h1>
-          <SuperList />
+          <SuperList selectedList={selectedList} />
         </div>
         <div className="main-app">
           <Form selectedList={selectedList} />

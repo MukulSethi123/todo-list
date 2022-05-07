@@ -8,9 +8,11 @@ import superListState from "./SuperState";
 const taskReducer = (state = superListState.tasks, action) => {
   switch (action.type) {
     case addTaskAction: {
-      console.log(action.listId);
+      const temp = state.slice(-1);
+      const id = temp[0].id + 1;
+      console.log(temp);
       const taskObj = {
-        id: state.length + 1,
+        id: id,
         listId: action.listId,
         text: action.text,
         completed: false,

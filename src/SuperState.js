@@ -36,13 +36,13 @@ const superListState = {
       completed: false,
     },
     {
-      taskId: 4,
+      id: 4,
       listId: 2,
       text: "complete app",
       completed: false,
     },
     {
-      taskId: 5,
+      id: 5,
       listId: 3,
       text: "study for gre",
       completed: false,

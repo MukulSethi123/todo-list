@@ -10,7 +10,12 @@ function Form({ selectedList }) {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    dispatch({ type: addTaskAction, text: task, listId: selectedList });
+
+    dispatch({
+      type: addTaskAction,
+      text: task,
+      listId: selectedList,
+    });
     setTask("");
   };
 
