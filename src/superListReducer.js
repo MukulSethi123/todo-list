@@ -1,13 +1,29 @@
 import superListState from "./SuperState";
-const SuperListReducer = (state = superListState, action) => {
+
+import {
+  changeSelectedListAction,
+  createListAction,
+  deleteListAction,
+} from "./action";
+
+const SuperListReducer = (state = superListState.superList, action) => {
   switch (action.type) {
-    case "createList":
-      console.log("create list");
-      return;
-    case "deleteList":
+    case changeSelectedListAction: {
+      const newState = {
+        selectedList: action.id,
+        lists: [...state.lists],
+      };
+      return newState;
+    }
+    case createListAction:
+      console.log(action.title);
+      return state;
+    case deleteListAction:
       console.log("delete list");
-      return;
+      return state;
     default:
-      return;
+      return state;
   }
 };
+
+export default SuperListReducer;

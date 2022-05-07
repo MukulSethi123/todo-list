@@ -1,25 +1,13 @@
 import React from "react";
-const superListState = [
-  {
-    id: 1,
-    title: "groceries",
-    tasks: [],
-  },
-  {
-    id: 2,
-    title: "work",
-    tasks: [],
-  },
-  {
-    id: 3,
-    title: "study",
-    tasks: [],
-  },
-];
+import { useDispatch, useSelector } from "react-redux";
+import { createListAction, changeSelectedListAction } from "../action";
 
 function SuperList() {
+  const superListState = useSelector((state) => state.superList.lists);
+  const dispatch = useDispatch();
+  // console.log(superListState);
   function handleOnclick(id) {
-    console.log("evet:", id);
+    dispatch({ type: changeSelectedListAction, id: id });
   }
   return (
     <div>

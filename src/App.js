@@ -2,9 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Form from "./components/Form";
 import TaskList from "./components/TaskList";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import SuperList from "./components/SuperList";
 function App() {
+  const selectedList = useSelector((state) => state.superList.selectedList);
   return (
     <div className="App">
       <h1>to-do-list</h1>
@@ -14,8 +15,8 @@ function App() {
           <SuperList />
         </div>
         <div className="main-app">
-          <Form />
-          <TaskList />
+          <Form selectedList={selectedList} />
+          <TaskList selectedList={selectedList} />
         </div>
       </div>
     </div>

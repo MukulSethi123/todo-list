@@ -4,13 +4,13 @@ import { addTaskAction } from "../action";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import "./Form.css";
 
-function Form() {
+function Form({ selectedList }) {
   const [task, setTask] = useState("");
   const dispatch = useDispatch();
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-    dispatch({ type: addTaskAction, taskName: task });
+    dispatch({ type: addTaskAction, text: task, listId: selectedList });
     setTask("");
   };
 
