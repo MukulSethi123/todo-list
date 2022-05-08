@@ -4,10 +4,6 @@ export const deleteTaskAction = "DELETETASK";
 export const createListAction = "ADDLIST";
 export const deleteListAction = "DELETELIST";
 export const changeSelectedListAction = "CHANGESELECTEDLIST";
-export function addTask(dispatch, taskObj) {
-  dispatch({ type: addTaskAction, taskObj });
-}
+export const clearListTasksAction = "CLEAR_LIST_TASKS";
 
-export function markTaskComplete() {}
-
-export function deleteTask() {}
+export const deletList = () => {};

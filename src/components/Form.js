@@ -10,7 +10,6 @@ function Form({ selectedList }) {
 
   const handleOnSubmit = (event) => {
     event.preventDefault();
-
     dispatch({
       type: addTaskAction,
       text: task,

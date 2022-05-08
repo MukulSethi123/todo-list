@@ -1,5 +1,79 @@
+.selected-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .selected-list{
     font-weight: bold;
     color: #ACD1AF;
     font-size: 1.5rem;
+
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-radius:.5rem;
+    border-color: black;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.list-container>h1 {
+    border-bottom: solid;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.lists{
+
+    align-items: center;
+}
+
+.delete-list-button{
+    color: #F47174;
+    margin-left: 1rem;
+}
+
+.list-form{
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+}
+.form-container {
+    border-style: solid;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+
+}
+
+form>input {
+    border-style: none;
+    /* border-color: black; */
+    border-radius: .25rem;
+    font-size: large;
+    width: 100%;
+    padding: .25rem .75rem;
+
+}
+
+form input:focus {
+    outline: none;
+}
+
+.form-button {
+    color: #ACD1AF;
+
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -9,23 +9,24 @@
 }
 .main-app{
   width: 100%;
+  margin-right: -1rem;
+  margin-bottom: -1.2rem;
 }
 .super-list{
-  align-items: center;
-  border-radius:.5rem ;
-  border-color: black;
-  border-style: solid;
   width: 50%;
-  margin-top: 1rem;
+  
+ 
 }
-.super-list > h1{
+/* .super-list > h1{
   border-bottom: solid;
   margin-top: 1rem;
   padding-bottom: 1rem;
-}
+} */
 .app-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+
 

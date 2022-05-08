@@ -7,8 +7,6 @@ import { deleteTaskAction, markTaskCompleteAction } from "../action";
 import { Checkbox } from "@mui/material";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
-import { style } from "@mui/system";
-import { Book } from "@mui/icons-material";
 import { motion } from "framer-motion";
 
 function Task({ id, name, completed }) {

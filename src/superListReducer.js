@@ -16,11 +16,19 @@ const SuperListReducer = (state = superListState.superList, action) => {
       return newState;
     }
     case createListAction:
-      console.log(action.title);
-      return state;
-    case deleteListAction:
-      console.log("delete list");
-      return state;
+      return {
+        selectedList: action.listObj.id,
+        lists: [...state.lists, action.listObj],
+      };
+    case deleteListAction: {
+      const newList = state.lists.filter((list) => list.id !== action.id);
+      const id = newList.slice(-1)[0].id;
+      console.log(id);
+      return {
+        selectedList: id,
+        lists: newList,
+      };
+    }
     default:
       return state;
   }
