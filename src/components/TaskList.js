@@ -2,12 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Task from "./Task";
 import { LayoutGroup, motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
-function TaskList({ isVisible }) {
-  const todoList = useSelector((state) => state);
-  // console.log(useSpring);
-  //li should be within a map fuction that goes through each task in state
 
+function TaskList({ selectedList }) {
+  const tasks = useSelector((state) => state.tasks);
+  const todoList = tasks.filter((task) => task.listId === selectedList);
+  // console.log(tasks);
   return (
     <LayoutGroup>
       <ul className="task-list-container">
@@ -16,7 +15,7 @@ function TaskList({ isVisible }) {
             <Task
               key={task.id}
               id={task.id}
-              name={task.taskName}
+              name={task.text}
               completed={task.completed}
             />
           ))
